@@ -24,3 +24,7 @@ console.log(tail(uno))
 
 const none = []
 console.log(tail(none))
+
+console.log(friends)
+var friends = 'ee'
+console.log(friends)
