@@ -19,9 +19,8 @@ const eqArrays = (a, b) => {
   return arrsMatch;
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
+assertEqual(eqArrays(['a', 'b', 'c'], ['a', 'b', 'c']), true); // => true
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true); // => false
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+assertEqual(eqArrays(['Yes', 'Yes', 'No'], ['Yes', 'Yes', 'No']), true); // => true
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => false
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
