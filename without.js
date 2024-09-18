@@ -16,5 +16,15 @@ const assertEqualArrays = (arrOne, arrTwo) => {
     else console.log(`🛑🛑🛑 Assertion Failed: ${arrOne} !== ${arrTwo}`);
 }
 
-assertEqualArrays(['a', 'b', 'c'], ['a', 'b', 'c']);
-assertEqualArrays([1, 2, 3], [3, 2, 1]);
+const without = (source, itemsToRemove) => {
+    let res = source;
+    itemsToRemove.forEach(item => {
+        res = res.filter((e) => e !== item)
+        // console.log(res);
+    });
+
+    return res;
+}
+
+assertEqualArrays(without([1, 2, 3], [1]), [2,3]);
+assertEqualArrays(without(["1", "2", "3", 4], [1, 2, "3"]), ["1", "2", 4]);
