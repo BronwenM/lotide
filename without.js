@@ -3,7 +3,7 @@ const eqArrays = (a, b) => {
 
     if (a.length === b.length) { //make sure the arrays have the same length, otherwise auto-fails
         for (let index in a) {
-            if (a[index] !== b[index]) arrsMatch = false; break;
+            if (a[index] !== b[index]) {arrsMatch = false; break;}
         }
     }
     else arrsMatch = false;
