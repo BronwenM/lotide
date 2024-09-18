@@ -11,10 +11,10 @@ const eqArrays = (a, b) => {
     return arrsMatch;
 };
 
-const assertEqualArrays = (arrOne, arrTwo) => {
+const assertArraysEqual = (arrOne, arrTwo) => {
     if(eqArrays(arrOne, arrTwo)) console.log(`✅✅✅ Assertion Passed: ${arrOne} === ${arrTwo}`);
     else console.log(`🛑🛑🛑 Assertion Failed: ${arrOne} !== ${arrTwo}`);
 }
 
-assertEqualArrays(['a', 'b', 'c'], ['a', 'b', 'c']);
-assertEqualArrays([1, 2, 3], [3, 2, 1]);
+assertArraysEqual(['a', 'b', 'c'], ['a', 'b', 'c']);
+assertArraysEqual([1, 2, 3], [3, 2, 1]);
