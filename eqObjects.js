@@ -17,7 +17,7 @@ const eqObjects = (objOne, objTwo) => {
       } else if (Array.isArray(objOne[key])) { //compare arrays
         if (objOne[key].length === objTwo[key].length) {
           for (let e of objOne[key]) {
-            if (!objTwo[key].includes(e)) { //second object's array doesn't include element e, set false and break the loop
+            if (!objTwo[key].includes(e)) { //second object's array doesn't include element e, set false and break the loop //will return true regardless of order, TODO: change to ensure order preserves
               return false;
             }
           }
