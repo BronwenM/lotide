@@ -12,9 +12,9 @@ const assertEqual = function (actual, expected) {
 const countLetters = (str) => {
     let res = {};
 
-    const lowerStr = str.toLowerCase().split(' ').join('');
+    const smStr = str.split(' ').join('');
 
-    for(let char of lowerStr){
+    for(let char of smStr){
         if(res[char]) res[char]++;
         else res[char] = 1;
     }
