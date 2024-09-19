@@ -18,12 +18,12 @@ const assertArraysEqual = (arrOne, arrTwo) => {
 };
 
 const letterPosition = (str) => {
-    let res = {};
+    const res = {};
 
     for (let index = 0; index < str.length; index++) {
         if (str[index] !== " ") {
-            if (res[str[index]]) res[str[index]].push(Number(index));
-            else res[str[index]] = [Number(index)];
+            if (res[str[index]]) res[str[index]].push(index);
+            else res[str[index]] = [index];
         }
 
     }
