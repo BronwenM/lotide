@@ -11,7 +11,7 @@ const assertEqual = function (actual, expected) {
 //returns an object ({a: 2, c: 2})
 
 const countOnly = (allItems, itemsToCount) => {
-    results = {}
+    let results = {}
 
     for (const item of allItems) {
         if (itemsToCount[item]) {
