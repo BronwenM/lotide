@@ -1,12 +1,20 @@
 const tail = require("../tail");
-const assertArraysEqual = require("../assertArraysEqual");
+const assert = require("chai").assert;
 
+describe("#tail", () => {
+    it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
+        assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"])
+    });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]); // should return ["Lighthouse", "Labs"]
-assertArraysEqual(result, ["Lighthouse", "Labs"]); // => will always fail! assert equal cannot compare arrays
+    it("returns [] for ['one']", () => {
+        assert.deepEqual(tail(["one"]), []); 
+    });
 
-const uno = ["one"];
-assertArraysEqual(tail(uno), []);
+    it("returns [] for []", () => {
+        assert.deepEqual(tail([]), []); 
+    });
 
-const none = [];
-assertArraysEqual(tail(none), []);
+    it("returns undefined for undefined", () => {
+        assert.strictEqual(tail(), undefined); 
+    });
+})
