@@ -1,8 +1,8 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertEqual.js",
+  "description": "A mini clone of the Lodash library. Created for learning purposes during Lighthouse Labs Web Development Bootcamp",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -22,5 +22,8 @@
   "devDependencies": {
     "chai": "^4.3.1",
     "mocha": "^9.2.2"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1"
   }
 }
