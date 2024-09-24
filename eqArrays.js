@@ -1,3 +1,4 @@
+//Compare two arrays and return true/false for strict equality
 const eqArrays = (a, b) => {
     let arrsMatch = true; //default value is arrays do not match
 

@@ -1,4 +1,4 @@
-//Tests if two objects are equal. Returns true if yes, false if no
+//Compare two objects and return true/false for equality
 const eqObjects = (objOne, objTwo) => {
   let keysOne = Object.keys(objOne);
   let keysTwo = Object.keys(objTwo);

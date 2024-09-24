@@ -1,4 +1,4 @@
-//return the middle item in an array. If the array has an even number of items, return both middle items.
+//Return the middle item in an array. If the array has an even number of items, return both middle items.
 const middle = (arr) => {
   let midArr = [];
   let midIndex;

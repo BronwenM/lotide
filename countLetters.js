@@ -1,6 +1,4 @@
-//take in a string
-//count the letters in the string
-//return the counts as obj
+//Count each instance of a letter in a string, return an object with key/value pairs for each unique letter in the string
 const countLetters = (str) => {
     let res = {};
 

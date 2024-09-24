@@ -1,4 +1,4 @@
-//remove elements from the source array that match the itemsToRemove param
+//Remove elements from the source array that match the itemsToRemove param
 const without = (source, itemsToRemove) => {
     let res = [];
     res = res.concat(source);

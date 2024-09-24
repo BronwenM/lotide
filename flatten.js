@@ -1,4 +1,4 @@
-//flatten a nested set of arrays
+//Recursively flatten a nested set of arrays
 const flatten = (arr, resultArray = []) => {
     let res = resultArray;
 

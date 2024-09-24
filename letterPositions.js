@@ -1,4 +1,4 @@
-//return the positions of each letter in a string as an object with each unique letter as a key
+//Return the positions of each letter in a string as an object with each unique letter as a key
 const letterPositions = (str) => {
     const res = {};
 

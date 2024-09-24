@@ -1,5 +1,4 @@
-//take in object and value to look for in object
-//return the 1st key with that value. if no value return undef
+//Returns the 1st key in an object with that match value param. If no value matches return undefined
 const findKeyByValue = (obj, val) => {
     for(item in obj){
         if(obj[item] === val) return item

@@ -1,6 +1,5 @@
-//takes in array (allItems) and an object (itemsToCount)
-//fn will count the number of items in the array, as listed in the object as "true" (ie [a,b,c,a,c] and {a: true, b: false, c:true})
-//returns an object ({a: 2, c: 2})
+//Count the number of items in an array, as listed in the object as "true" return an object with key/value pairs for each unique element in the array
+//E.X. [a,b,c,a,c] and {a: true, b: false, c:true} will return {a: 2, c:2}
 const countOnly = (allItems, itemsToCount) => {
     let results = {}
 
